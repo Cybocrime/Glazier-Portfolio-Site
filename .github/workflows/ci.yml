@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run build
+        run: echo "No build step required"  # No build step needed for pure HTML/CSS/JS
+
+      - name: Run tests
+        run: echo "No tests to run"  # Replace this if you have any tests
+
+      - name: Deploy to GitHub Pages
+        run: echo "Deployment step"  # Replace this with your actual deployment command
